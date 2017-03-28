@@ -1,0 +1,39 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+.sponsers ul {
+  list-style-type: none;
+    width:100%;
+}
+
+.sponsers li {
+  width: 30%;
+  margin: 1.5%;
+  height: 100px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.sponsers img {
+  width: 100%;
+  text-align: center;
+  padding-top: 27.5px;
+}
+
+.sponsers {
+  width: 90%;
+  margin: auto;
+}
+
+.sponser {
+  width: 40%;
+  display: inline;
+} 

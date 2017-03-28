@@ -1,0 +1,123 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+@font-face {
+    font-family: TitleLight;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tekst;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+.pageTitle{
+    font-family: TitleLight;
+}
+
+h1 {
+    padding-top: 0px;
+}
+
+.dienstContent li {
+  color: #696765;
+}
+
+.dienstTitel{
+    text-align: center;
+    height:5.65em;
+}
+.dienstTitel img{
+    width:14.5%;
+    display:block;
+    margin: 0 auto;
+    padding:5.5% 0;
+}
+
+.dienstTitel h1{
+    margin-top:-17.5%;
+    font-family: TitleLight;
+    color:white;
+}
+
+.dienstContent {
+    display:none;
+    width:90%;
+    margin: 0 auto;
+    font-family: Tekst;
+    font-size: 0.8em;
+}
+.dienstContent img{
+    width:45%;
+    display:block;
+    margin:0 auto;
+    padding: 5% 0;
+}
+
+.dienstContent ul{
+    list-style-type: none;
+}
+
+.dienstContent ul:nth-child(2){
+    border-bottom: #a33534 dashed 2px;
+}
+
+
+.dienstContent ul:nth-child(2) li:before{
+    content:"- ";    
+}
+
+
+.dienstContent ul:nth-child(2) li{
+    text-indent: 0.05em;
+    margin-bottom: 6%;
+}
+
+.dienstContent ul:nth-child(3) li:nth-child(odd){
+    margin-top:6%;
+    margin-bottom: 3%;
+}
+
+.email{
+    float: left;
+    margin-top:6%;
+    margin-bottom:3%;
+    color: #a33534;
+}
+
+.imgPijl img{
+    width: 7%;
+    margin-right: 0%;
+}
+
+#goedeRaad{
+    background-color: #b74041;
+}
+
+#centenVoorStudenten{
+    background-color: #d07373;
+}
+
+#diversiteit{
+    background-color: #e49090;
+}
+
+#kotEnVervoer{
+    background-color: #bcbcbc;
+}
+
+#sportEnCultuur{
+    background-color: #878786;
+}
+
+#studentenResto{
+    background-color: #3c3c3b;
+}
+
+#luisterendOor{
+    background-color:#292929;
+}

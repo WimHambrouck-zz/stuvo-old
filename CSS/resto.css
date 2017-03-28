@@ -1,0 +1,153 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: titel;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBook.otf);
+}
+
+@font-face {
+    font-family: thinTekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Thin.otf);
+}
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+/*****NAVIGATIE-RESTO*****/
+
+.navResto {
+    background-color: rgb(105, 103, 101);
+    height: 60px;
+}
+
+.navRestoWrapper {
+    width:100%;
+}
+.navResto ul{
+    display:table;
+    width:600%;
+    position: relative;
+}
+
+.navResto li {
+    text-align: center;
+    display: table-cell;
+    width: 16.3%;
+    text-align: center;
+    padding: 21px 0;
+    color: white;
+    font-family: titel;
+}
+/*****RESTO*****/
+
+.dagSelectieWrapper{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.dagSelectieWrapperSlider{
+    width:500%;
+    height:60px;
+    position:relative;
+    
+}
+
+.dagSelectie {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(131, 128, 129, 0.75);
+}
+
+.dagSelectie h1 {
+    width:15%;
+    margin: 0.2% 2.5%;
+    text-align: center;
+    font-family: Title;
+    font-size: 125%;
+    color: rgb(105, 103, 101);
+}
+
+.pijltjes {
+    width: 5%;
+    padding:0 2.5%;
+}
+
+.dagSelectie{
+    text-align: center;
+}
+
+.dagSelectie h1 {
+    text-align: center;
+    padding-top: 12px;
+    display: inline-block;
+}
+
+.pijltjeRechts {
+    position: absolute;
+    z-index:1;
+    right: 10px;
+    margin-top: 15px;
+}
+
+.pijltjeLinks {
+    position: absolute;
+    margin-top: 15px;
+    z-index:1;
+    left: 10px;
+}
+
+.menuWrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.menuWrapperSlider {
+    width: 100%;
+    position:relative;
+}
+
+.menu {
+    width:14%;
+    padding: 0 3%;
+    display: inline-block;
+}
+
+.menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.menu .info {
+    padding-left: 10px;
+}
+
+.menu table td {
+    color: rgb(105, 103, 101);
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 12.5px;
+    font-family: Tekst;
+}
+
+.menu td span {
+    font-family: thinTekst;
+    font-size: 0.8em;
+}

@@ -1,0 +1,346 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+
+@font-face {
+    font-family: Title;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabBold.otf);
+}
+
+@font-face {
+    font-family: Title Regular;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabMedium.otf);
+}
+
+@font-face {
+    font-family: Tekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+.hoofdNav #hamburger {
+    padding: 17px 17px;
+    width: 36px;
+    height: 26px;
+}
+
+.hoofdNav #hamburger img{
+    max-width: 30px;
+}
+.hoofdNav #tandwiel img{
+    max-width: 30px;
+}
+
+.hoofdNav #tandwiel {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    padding: 15px 17px;
+}
+
+.hoofdNav #pageTitle {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    position: absolute;
+    top: 19px;
+    color: white;
+    font-family: Title regular;
+    font-size: 1.7em;
+}
+
+.hoofdNav #logo {
+    position: absolute;
+    top: 1.3%;
+    left: 43%;
+}
+
+.hoofdNav #logo img {
+    max-height: 45px;
+}
+
+#navWrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+}
+/**********NAVIGATIE**********/
+
+#navigatie {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: -80%;
+    width: 80%;
+    min-height: 100%;
+    background-color: #6f2421;
+}
+
+#navigatie input[type=text] {
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 0;
+    height: 20px;
+    padding: 7px;
+    margin-top: 10px;
+    width: 65%;
+    margin-left: 15%;
+    font-family: Tekst;
+    color: #838081;
+}
+
+#navigatie .searchButton {
+    float: none;
+    background: url(../img/search_red.png) no-repeat;
+    border: 0;
+    margin-left: -13%;
+    padding: 2%;
+    width: 13%;
+}
+
+#navigatie .navigatieNav {
+    margin-top: 10px;
+}
+
+#navigatie .navigatieNav ul li {
+    display: block;
+    width: 80%;
+    padding: 8px 7% 10px 10%;
+    background-color: #a33534;
+    margin-bottom: 10px;
+}
+
+#navigatie .navigatieNav ul .current {
+    display: block;
+    width: 83%;
+    padding: 8px 7% 10px 10%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    color: #6f2421;
+}
+
+.navigatieNav ul li img {
+    display: inline-block;
+}
+
+#navigatie .navigatieNav a {
+    font-family: Title Regular;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(111, 36, 33, 0.70);
+}
+
+#navigatie .navigatieNav ul .current a {
+    font-family: Title Regular;
+    font-size: 24px;
+    text-decoration: none;
+    color: #a33534;
+}
+
+#navigatie #social ul {
+    padding-top: 15px;
+}
+
+#navigatie #social ul li {
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+
+#navigatie #social p {
+    font-family: Title;
+    display: inline;
+    font-size: 24px;
+    text-decoration: none;
+    color: #a33534;
+}
+
+#navigatie #social a {
+    text-decoration: none;
+}
+
+#navigatie #social ul li img {
+    padding-top: 0px;
+    width: 22%;
+}
+/**********SETTINGS**********/
+
+#settings {
+    z-index: 3;
+    display: none;
+    position: absolute;
+    right: -80%;
+    width: 80%;
+    height: 100%;
+    background-color: #6f2421;
+}
+
+#settings .settingsNav ul li {
+    list-style: none;
+    font-family: Title Regular;
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#settings .settingsNav ul li p {
+    color: #fff;
+}
+
+#black {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 2;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.cmn-toggle + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+input.cmn-toggle-yes-no + label {
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+input.cmn-toggle-yes-no + label:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #a33534;
+    font-family: Title;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+input.cmn-toggle-yes-no + label:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-family: Title;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+input.cmn-toggle-yes-no + label:before {
+    background-color: rgb(255, 255, 255);
+    content: attr(data-off);
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+}
+
+input.cmn-toggle-yes-no + label:after {
+    background-color: #a33534;
+    content: attr(data-on);
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+input.cmn-toggle-yes-no:checked + label:before {
+    transform: rotateY(180deg);
+}
+
+input.cmn-toggle-yes-no:checked + label:after {
+    transform: rotateY(0);
+}
+
+select {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    color: #a33534;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+}
+
+select,
+option {
+    width: 100px;
+    font-family: Title;
+    font-size: 14px;
+}
+
+option {
+    background: rgba(255, 255, 255, 0);
+}
+
+.label {
+    position: relative
+}
+
+.label:after {
+    content: '<>';
+    font: 11px "Consolas", monospace;
+    color: #a33534;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 8px;
+    top: 2px;
+    padding: 0 0 2px;
+    position: absolute;
+}
+
+.label:before {
+    content: '';
+    right: 6px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    display: block;
+}
+
+.placeHolder {
+    width: 80%;
+    font-size:1em;
+    margin:auto;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
+}

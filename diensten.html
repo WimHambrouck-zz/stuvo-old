@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Diensten</title>
+    <meta name="auteurs" content="Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luycks, Cédric Brichau">
+    <meta name="jaar" content="2015">
+    <meta name="afdeling" content="Multec">
+    <meta name="bachelorjaar" content="1ste jaar">
+    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no">
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.0.min.css" />
+    <link rel="stylesheet" href="CSS/diensten.css" />
+    <link rel="stylesheet" href="CSS/style_nav.css" />
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile.custom.js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
+    <script type="text/javascript" src="scripts/diensten.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="hoofdNav">
+            <div id="hamburger"><img src="img/hamburger.png" alt="menu">
+            </div>
+            <div id="pageTitle">Diensten
+            </div>
+            <div id="tandwiel"><img src="img/settings.png" alt="settings">
+            </div>
+        </nav>
+
+    </header>
+    <div class="navWrapper">
+        <div id="navigatie">
+            <input type="text" name="search">
+            <input type="submit" class="searchButton" value="">
+            <nav class="navigatieNav">
+                <ul>
+                    <a href="home.html">
+                        <li><img src="img/home_red.png" alt="home">Home
+                        </li>
+                    </a>
+                    <a href="diensten.html">
+                        <li class="current"><img src="img/diensten_red.png" alt="diensten">Diensten
+                        </li>
+                    </a>
+                    <a href="events.html">
+                        <li><img src="img/agenda_red.png" alt="agenda">Agenda
+                        </li>
+                    </a>
+                    <a href="nieuws.html">
+                        <li><img src="img/nieuws_red.png" alt="nieuws">Nieuws
+                        </li>
+                    </a>
+                    <a href="resto.html">
+                        <li><img src="img/resto_red.png" alt="resto">Resto
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li><img src="img/contact_red.png" alt="contact">Contact
+                        </li>
+                    </a>
+                    <a href="sponsers.html">
+                        <li><img src="img/sponsors_red.png" alt="sponsors">Sponsors
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="social">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/pages/Stuvo-EhB/149428375138173"><img class="fb" src="img/fb.png" alt="facebook" />
+                            <p>Stuvo EhB</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ehbrussel"><img class="twitter" src="img/twitter.png" alt="twitter" />
+                            <p>@ehbrussel</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="settings">
+
+            <nav class="settingsNav">
+                <ul>
+                    <li>
+                        <p>Pushberichten toestaan?</p>
+
+                        <div class="switch">
+                            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+                            <label for="cmn-toggle-7" data-on="Ja" data-off="Nee"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Campusselectie:</p>
+                        <label class="label">
+                            <select name="campus">
+                                <option value="0">Dansaert</option>
+                                <option value="1">IWT</option>
+                                <option value="2">Jette</option>
+                                <option value="3">RITS</option>
+                                <option value="4">KCB</option>
+                                <option value="5">TTK</option>
+                            </select>
+                        </label>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+        </div>
+        <div id="black"></div>
+    </div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='goedeRaad'>
+            <img src="img/EenHoekCirkel.png" alt="" />
+            <h1>Goede Raad</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/GoedeRaadIcoon.png" class="imgLogo" alt="GoedeRaad">
+            <ul class="InfoTekst">
+                <li>Hulp bij aanvraag van een studietoelage van de Vlaamse gemeenschap.</li>
+                <li>Sociaaljuridisch advies over alle studententhema's: kinderbijslag, leefloon, werken en studeren, onderhoudsplichten.</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 526 85 03</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof - Jette, RITS | school of arts en KBC | school of arts</li>
+                <li><b>02 526 85 00</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
+            </ul>
+
+            <p class="email">goederaad@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+
+        </div>
+    </div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='centenVoorStudenten'>
+            <img src="img/Bolletje.png" alt="" />
+            <h1>Centen voor Studenten</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/CentenVoorStudenten.png" class="imgLogo" alt="centen voor studenten">
+            <ul class="InfoTekst">
+                <li>Voorschot studietoelage van de Vlaamse Gemeenschap</li>
+                <li>Aanvullende of vervangende toelage en renteloze studielening</li>
+                <li>Studentenjobs</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 526 85 03</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof - Jette, RITS | school of arts en KBC | school of arts</li>
+                <li><b>02 526 85 00</b>
+                </li>
+                <li>Campus Dansaert - Bloemenhof, kaai (incl VUB'ers), RITS | school of arts en KBC | school of arts</li>
+            </ul>
+
+            <p class="email">centenvoorstudenten@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+
+    <div class='dienst'>
+        <div class="dienstTitel" id='diversiteit'>
+            <img src="img/6-hoek.png" alt="" />
+            <h1>Diversiteit</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/Diversiteit.png" class="imgLogo" alt="diversiteit">
+            <ul class="InfoTekst">
+                <li>Stuvo EhB staat voor ... kansen bieden.</li>
+                <li>Naast materiële, financiële en mentale steun willen we dat je lekker jezelf kan zijn en je thuis voelt op onze hogeschool. Studeren moet haalbaar zijn voor iedereen. Talenten moet je kunnen ontplooien. </li>
+                <li>welkom zoals je bent</li>
+                <li>gelijke kansen</li>
+                <li>internationaal</li>
+                <li>pluralisme</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 526 85 02</b>
+                </li>
+            </ul>
+
+            <p class="email">sofie.giets@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+
+    <div class='dienst'>
+        <div class="dienstTitel" id='kotEnVervoer'>
+            <img src="img/Driehoek.png" alt="" />
+            <h1>Kot en Vervoer</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/KotenVervoer.png" class="imgLogo" alt="Kot en Vervoer">
+            <ul class="InfoTekst">
+                <li>Betaalbare kamers in het Studenten-home Jette en Dansaert 123</li>
+                <li>Eigen huisvestingsdienst</li>
+                <li>Partner Br(ik): Studentenkamers in Brussel Centrum</li>
+                <li>Tips openbaar vervoer, fietsen in Brussel, ...</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 476 16 17</b>
+                </li>
+            </ul>
+
+            <p class="email">kot@ehb.be</p>
+            <p class="email">vervoer@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='sportEnCultuur'>
+            <img src="img/TweehoekCirkel.png" alt="" />
+            <h1>Sport en Cultuur</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/SportCultuur.png" class="imgLogo" alt="Sport en Cultuur">
+            <ul class="InfoTekst">
+                <li>Sportaanbod: sportprogramma, lessenreeksen, kortingen, sport-evenementen, competities en clubs</li>
+                <li>Rits Café: studentenbar met een culturele twist met o.a. concerten, films, debatten en cultuurkortingen. Voor en door studenten</li>
+                <li>Ondersteuning studentenorganisaties</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 559 15 77 of 02 559 15 78</b>
+            </ul>
+            <p class="email">sport@ehb.be of cultuur@ehb.be</p>
+
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='studentenResto'>
+            <img src="img/Rechthoek.png" alt="" />
+            <h1>Studenten Resto's</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/SR.png" class="imgLogo" alt="studenten resto's">
+            <ul class="InfoTekst">
+                <li>Goed, gezond, gezellig en goedkoop eten op de campus:</li>
+                <li>Koninklijk Conservatorium (Brussel)</li>
+                <li>resto Bloemenhof (Brussel)</li>
+                <li>resto Nijverheidskaai (Anderlecht)</li>
+                <li>The Link (Jette)</li>
+                <li>Rits Café (Brussel)</li>
+                <li>Samenwerking met VUB resto's in Jette en Etterbeek</li>
+            </ul>
+
+            <ul class="InfoTekst">
+                <li><b>02 559 15 76</b>
+                </li>
+            </ul>
+
+            <p class="email">studentenrestos@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+    <div class='dienst'>
+        <div class="dienstTitel" id='luisterendOor'>
+            <img src="img/Hartje.png" alt="" />
+            <h1>Luisterend Oor</h1>
+        </div>
+
+        <div class="dienstContent">
+            <img src="img/LuisterendOor.png" class="imgLogo" alt="Luisterend oor">
+            <ul class="InfoTekst">
+                <li>Stuvo EhB staat voor je klaar, in goede en kwade tijden, voor grote en kleine problemen.</li>
+                <li>Je kan bij ons terecht voor professionele psychosociale begeleiding, maar ook gewoon om eens een keertje je hart te luchten.</li>
+            </ul>
+            <ul class="InfoTekst">
+                <li><b>02 526 85 02</b>
+                </li>
+            </ul>
+
+            <p class="email">sofie.giets@ehb.be</p>
+            <div class="imgPijl"><img src="img/ArrowUp.png" alt="Sluit Dienst Inhoud" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

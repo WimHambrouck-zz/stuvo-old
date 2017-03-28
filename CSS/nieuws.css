@@ -1,0 +1,129 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+@font-face {
+    font-family: Title Light;
+    src: url(../Fonts/KlinicSlab_Personal_License_Titel/KlinicSlabLight.otf);
+}
+
+@font-face {
+    font-family: thinTekst;
+    src: url(../Fonts/MissionGothic_Personal_License_Tekst/Mission%20Gothic%20Thin.otf);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.clearFix {
+    clear: both;
+}
+
+.nieuws {
+    width: 80%;
+    margin: 15px auto;
+    font-family: Tekst;
+    color: rgb(105, 103, 101);
+    font-size: 0.8em;
+}
+
+.nieuws ul {
+    list-style-type: none;
+    margin-bottom: 10%;
+    padding-bottom: 10px;
+}
+
+.nieuws li {
+    margin-bottom: 20px;
+}
+
+.nieuws img:nth-child(2) {
+    float: left;
+    margin-right: 15px;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4);
+}
+
+.nieuws h3 {
+    font-family: Title;
+    margin-bottom: 5px;
+}
+
+.nieuws .date {
+    margin-bottom: 10px;
+    color: rgb(105, 103, 101);
+    font-size: 0.9em;
+}
+
+.nieuws .selected {
+    border-bottom: #6f2421 2px dashed;
+    padding-bottom: 10px;
+}
+
+.nieuws .selected h3 {
+    color: #6f2421;
+}
+
+.nieuws .selected img {
+    width: 35%;
+}
+
+.nieuws .selected .readMore {
+    display: none;
+}
+
+.nieuws .notSelected .articleLink {
+    display:none;
+}
+
+.nieuws .selected .articleLink a {
+    color : #6f2421;
+}
+
+.nieuws .notSelected {
+    float: none;
+}
+
+.nieuws .notSelected img {
+    width: 20%;
+}
+
+.nieuws .notSelected h3 {
+    color: black;
+    float: right;
+    width: 70%;
+    color: #696765;
+}
+
+.nieuws .notSelected .description {
+    display: none;
+}
+
+.nieuws .notSelected .date {
+    float: right;
+    width: 70%;
+    margin-bottom: 0px;
+}
+
+.nieuws .notSelected .readMore {
+    float: right;
+    width: 70%;
+    color: #6f2421;
+}
+
+.nieuws .date img {
+    width: 7%;
+    padding-right: 10px;
+}
+

@@ -1,0 +1,39 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-red-top {
+    vertical-align: middle;
+    background-color: #a33534;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+   
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.welkomBever {
+   
+    vertical-align: middle;
+    max-height: 40%;
+    max-width: 80%;
+    padding-bottom: 5%;
+    
+   
+}
+

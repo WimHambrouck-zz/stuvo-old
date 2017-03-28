@@ -1,0 +1,209 @@
+/** Jan Desmet, Bart Sevenois, Gabriel Deschamps, Lieven Luyckx, Cédric Brichau **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+html,
+body {
+    font-family: Arial;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    color: #696765;
+}
+
+.hoofdNav {
+    background-color: #a33534;
+    height: 60px;
+}
+
+
+
+.homepageSliderWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.homepageSlider {
+    width: 300%;
+    position: relative;
+    left: -100%;
+}
+
+.homepageSlide {
+    float: left;
+    display: inline-block;
+    width: 33.333333%;
+    margin-bottom: 30px;
+}
+
+.events {
+    position: relative;
+}
+/**********HOME**********/
+
+.nav {
+    background-color: rgb(105, 103, 101);
+    height: 50px;
+}
+
+.nav a {
+    color: white;
+    font-family: Title Regular;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav ul {
+    width: 100%;
+    display:table;
+}
+
+.nav ul li {
+    width:33%;
+    padding-top:15px;
+    display: table-cell;
+    text-align: center;
+    list-style-type: none;
+    font-family: Title Regular;
+}
+
+#pointer{
+    width:33%;
+    height:5px;
+    left:33%;
+    background-color: #a33534;
+    margin-top:-5px;
+    position:relative;
+}
+
+.titelHome {
+    font-family: Title;
+    font-size: 1.6em;
+    text-align: center;
+    color: #a33534;
+    border-top: dashed 1px;
+    border-bottom: dashed 1px;
+    padding: 5px 0 2.5px 0;
+    width: 80%;
+    margin: 15px auto;
+    
+}
+/*****OVER*ONS*****/
+
+.bever {
+    width: 100%;
+}
+
+.overOns p {
+    width: 80%;
+    margin: 5px auto auto auto ;
+    font-family: Tekst;
+    font-size: 0.85em;
+}
+/*****EVENTS*****/
+
+.events ul {
+    margin: auto;
+    width: 80%;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.events .datum {
+    font-family: Title;
+    color: #a33534;
+    font-size: 1.2em;
+    line-height: 0.8em;
+    float: left;
+    padding-top: 7.5%;
+}
+
+.datum span {
+    color: #a33534;
+    font-size: 9.5vw;
+    line-height: 0;
+}
+
+.events .icoon {
+    width: 4%;
+    margin-top: 1.5%;
+}
+
+.events h3 {
+    color: rgb(105, 103, 101);
+    font-size: 1em;
+    font-family: Title Regular;
+}
+
+.events p {
+    line-height: 1.5vw;
+    color: rgb(105, 103, 101);
+    display: inline;
+    font-size: 0.8em;
+    margin-left: 5px;
+    font-family: Tekst;
+}
+
+.events .info {
+    
+    float: right;
+    width: 75%;
+    border-left: dashed 1px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+/*****ACTUEEL*****/
+
+
+.actueel .info {
+    margin-left: 80px;
+}
+
+.actueel ul {
+    width: 80%;
+    margin: auto;
+    list-style-type: none;
+}
+
+.actueel li {
+    margin-bottom: 15px;
+}
+
+.actueel img {
+    width: 20%;
+    float: left;
+}
+
+.actueel .icoon {
+    width: 5%;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.actueel h3 {
+    color: rgb(105, 103, 101);
+    font-size: 1em;
+    font-family: Title Regular;
+}
+
+.actueel p {
+    font-size: 0.8em;
+    margin: 5px 0;
+    font-family: Tekst;
+}
+
+.actueel .datum {
+    font-weight: bold;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
