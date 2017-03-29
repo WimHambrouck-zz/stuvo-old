@@ -3,7 +3,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/5.2.0"
         id        = "be.erasmushogeschool.stuvo"
-        version   = "1.0.0">
+        version   = "1.0.1">
 
     <name>Stuvo ehb</name>
 

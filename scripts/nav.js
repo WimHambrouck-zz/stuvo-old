@@ -6,8 +6,8 @@ document.addEventListener("deviceready", registerGCM, false);
 
 
 $(document).ready(function () {
+	$('header').load('inc/header.html').trigger("create");
     init();
-    
 });
 
 
@@ -18,11 +18,15 @@ function init() {
         $('.settingsNav select').val(localStorage.getItem('campusID'));
     }
 
-    $("#hamburger").click(function () {
+    /*$("#hamburger").click(function () {
         toggleNavMenu(true);
-    });
+    });*/
 
-    $("#tandwiel").click(function () {
+    /*$("#tandwiel").click(function () {
+        toggleSettingsMenu(true);
+    });*/
+	
+	$(document).on("click", "#tandwiel", function () {
         toggleSettingsMenu(true);
     });
 
